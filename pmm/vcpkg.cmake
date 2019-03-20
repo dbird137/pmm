@@ -20,7 +20,7 @@ function(_pmm_ensure_vcpkg dir rev)
     file(REMOVE_RECURSE "${tmp_dir}")
     # Download the Zip archive from GitHub
     get_filename_component(vcpkg_zip "${dir}/../vcpkg-tmp.zip" ABSOLUTE)
-    set(url "https://github.com/Microsoft/vcpkg/archive/${rev}.zip")
+    set(url "https://github.com/dbird137/vcpkg/archive/${rev}.zip")
     _pmm_log("Downloading vcpkg at ${rev} ...")
     _pmm_log(VERBOSE "vcpkg ZIP archive lives at ${url}")
     file(
