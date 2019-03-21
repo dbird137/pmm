@@ -34,7 +34,7 @@ endmacro()
 # The version:
 _pmm_set_if_undef(PMM_VERSION ${PMM_VERSION_INIT})
 # The base URL we download PMM from:
-_pmm_set_if_undef(PMM_URL_BASE "https://vector-of-bool.github.io/pmm")
+_pmm_set_if_undef(PMM_URL_BASE "https://github.com/dbird137/pmm")
 # The real URL we download from (Based on the version)
 _pmm_set_if_undef(PMM_URL "${PMM_URL_BASE}/${PMM_VERSION}")
 # The directory where we store our downloaded files
