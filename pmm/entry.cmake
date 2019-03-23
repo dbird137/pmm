@@ -63,7 +63,7 @@ foreach(fname IN ITEMS util.cmake python.cmake conan.cmake vcpkg.cmake cmcm.cmak
 endforeach()
 
 # Do the update check.
-set(_latest_info_url "${PMM_URL_BASE}/blob/dbird_branch/latest-info.cmake")
+set(_latest_info_url "${PMM_URL_BASE}/latest-info.cmake")
 set(_latest_info_file "${PMM_DIR}/latest-info.cmake")
 _pmm_download("${_latest_info_url}" "${_latest_info_file}" NO_CHECK RESULT_VARIABLE did_download)
 if(NOT did_download)
